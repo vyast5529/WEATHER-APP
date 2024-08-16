@@ -1,0 +1,443 @@
+@font-face {
+    font-family:nb ;
+    src: url(NBInternationalProBoo.ttf);
+
+
+}
+*{
+    margin: 0;
+    padding:0 ;
+    font-family: nb;
+
+}
+#main
+{
+   height: 100vh;
+   width: 100vw;
+   background: linear-gradient(rgb(137, 85, 141),rgb(58, 56, 143));
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+}
+#srb
+{
+   height: 4vw;
+   width: 28vw;
+  color: white;
+
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   border-radius: 20px;
+   background-color: rgba(0,0, 0,0.6);
+   
+}
+input{
+    height: 3vw;
+    width: 20vw;
+    font-size: 1.8vw;
+   background-color: transparent;
+   border: none;
+   color: aliceblue;
+   font-family: nb;
+  
+}
+
+input::placeholder
+{
+    color: aliceblue;
+    font-family: nb;
+    position: relative;
+    font-size: 1.7vw;
+    left: 1vw;
+}
+button{
+    height: 2.8vw;
+    width: 2.8vw;
+   
+    border: none;
+    border-radius: 50%;
+    
+    background-color: rgb(255, 255, 255,0.6);
+
+   
+}
+button i{
+
+    font-size: 2vw;
+    
+    color: black;
+}
+
+#cont
+{
+    height: 38vw;
+    width: 30vw;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    border-radius: 20px;
+    
+
+}
+#img
+{
+    height: 14vw;
+    width: 14vw;
+    visibility: hidden;
+    background-color: transparent;
+   
+}
+
+#img img 
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    mix-blend-mode: multiply;
+}
+#tem
+{
+    height: 6vw;
+    width: 20vw;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  
+    
+
+}
+#tem h6{
+    font-size: 2vw;
+
+}
+#tem p{
+    font-size: 2vw;
+
+}
+#info
+{
+    height: 6vw;
+    width: 90%;
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+ 
+visibility: hidden;
+}
+#info #humi
+
+{
+    height: 100%;
+    width: 40%;
+   
+    display: flex;
+    align-items: center;
+   
+    justify-content: space-evenly;
+}
+#info #wind
+
+{
+    height: 100%;
+    width: 50%;
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  
+    
+}
+
+#info #wind i
+
+{
+  font-size: 3vw;
+
+}
+#info #humi i
+
+{
+  font-size: 3vw;
+
+}
+#dta1
+{
+    height: 90%;
+    width: 7vw;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+#dta1 h6
+{
+   font-size: 2vw;
+}
+#dta2 p
+{
+   font-size: 1.3vw;
+}
+#dta2
+{
+    height: 90%;
+    width: 9vw;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+#dta2 h6
+{
+   font-size: 1.7vw;
+}
+#dta1 p
+{
+   font-size: 1.3vw;
+}
+#inc
+{
+    height: 30vw;
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 10px 10px rgba(0,0, 0,0.5);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+   display: none;
+  
+ scale:0;
+  margin-top: 1vw;
+}
+@media (max-width:600px) 
+{
+    #cont
+{
+    height:110vw;
+    width: 85vw;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    border-radius: 20px;
+   
+   
+
+}
+#inc
+{
+    height: 75%;
+    width: 90%;
+    background-color: rgb(255, 255, 255,0.1);
+    box-shadow: 10px 10px rgba(0,0, 0,0.5);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+   display: none;
+  
+ scale:0;
+  margin-top: 3vw;
+}
+#srb
+{
+   height: 13vw;
+   width: 76vw;
+  color: white;
+
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   border-radius: 20px;
+   background-color: rgba(0,0, 0,0.6);
+   
+}
+input{
+    height: 10vw;
+    width: 50vw;
+    font-size: 5vw;
+   background-color: transparent;
+   border: none;
+   color: aliceblue;
+   font-family: nb;
+  
+}
+
+input::placeholder
+{
+    color: aliceblue;
+    font-family: nb;
+    position: relative;
+    font-size: 4.2vw;
+    left: 1vw;
+}
+button{
+    height: 10vw;
+    width:10vw;
+   
+    border: none;
+    border-radius: 50%;
+    
+    background-color: rgb(255, 255, 255,0.6);
+   
+   
+}
+button i{
+
+    font-size: 7vw;
+    
+    color: black;
+}
+#img
+{
+    height: 38vw;
+    width: 38vw;
+    visibility: hidden;
+    position: relative;
+   top: 0.6vw;
+   
+    
+}
+#img img {
+    height: 100%;
+    width: 100%;
+object-fit: cover;
+    mix-blend-mode: multiply;
+}
+#tem
+{
+    height: 17vw;
+    width: 70vw;
+    
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    position: relative;
+top: 0.7vw;
+  
+    
+
+}
+#tem h6{
+    font-size: 6vw;
+
+}
+#tem p{
+    font-size: 6vw;
+
+}
+#info
+{
+    height: 17vw;
+    width: 95%;
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+   
+ 
+visibility: hidden;
+}
+#info #humi
+
+{
+    height: 100%;
+    width: 40%;
+   
+    display: flex;
+    align-items: center;
+   
+    justify-content: space-evenly;
+  
+   
+}
+#info #wind
+
+{
+    height: 100%;
+    width: 52%;
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+   
+  
+    
+}
+
+#info #wind i
+
+{
+  font-size: 8.5vw;
+
+}
+#info #humi i
+
+{
+  font-size: 8.5vw;
+
+}
+#dta1
+{
+    height: 90%;
+    width: 18vw;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+   
+    
+}
+#dta1 h6
+{
+   font-size: 5vw;
+}
+#dta2 p
+{
+   font-size: 4vw;
+   color: aliceblue;
+}
+#dta2
+{
+    height: 90%;
+    width: 25vw;
+   
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+    justify-content: space-evenly;
+   
+    
+}
+#dta2 h6
+{
+   font-size: 5vw;
+}
+#dta1 p
+{
+   font-size: 4vw;
+   color: aliceblue;
+}
+   
+}
